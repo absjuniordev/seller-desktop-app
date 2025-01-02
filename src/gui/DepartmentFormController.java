@@ -3,7 +3,9 @@ package gui;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.ResourceBundle;
+import java.util.Set;
 
 import db.DbException;
 import gui.listeners.DataChangeListener;
@@ -18,6 +20,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
 import model.entities.Department;
+import model.exceptions.ValidationException;
 import model.service.DepartmentService;
 
 public class DepartmentFormController implements Initializable {
@@ -25,7 +28,7 @@ public class DepartmentFormController implements Initializable {
 	private Department entity;
 
 	private DepartmentService service;
-	
+
 	private List<DataChangeListener> dataChangeListeners = new ArrayList<DataChangeListener>();
 
 	@FXML
@@ -50,7 +53,7 @@ public class DepartmentFormController implements Initializable {
 	public void setDepartmentservice(DepartmentService service) {
 		this.service = service;
 	}
-	
+
 	public void subscribeDataChangeList(DataChangeListener listener) {
 		dataChangeListeners.add(listener);
 	}
@@ -59,7 +62,8 @@ public class DepartmentFormController implements Initializable {
 	public void onBtSaveAction(ActionEvent event) {
 		if (entity == null) {
 			throw new IllegalStateException("Entity was null");
-		}if (service == null) {
+		}
+		if (service == null) {
 			throw new IllegalStateException("Service was null");
 		}
 		try {
@@ -67,8 +71,11 @@ public class DepartmentFormController implements Initializable {
 			service.saveOrUpdate(entity);
 			notifyDataChangeListeners();
 			Utils.currentStage(event).close();
-			
-		} catch (DbException e) {
+
+		}catch (ValidationException e) {
+			setErrorMessages(e.getErros());
+		}
+		catch (DbException e) {
 			Alerts.showAlert("Error saving object", null, e.getMessage(), AlertType.ERROR);
 		}
 	}
@@ -77,14 +84,23 @@ public class DepartmentFormController implements Initializable {
 		for (DataChangeListener listener : dataChangeListeners) {
 			listener.onDataChanged();
 		}
-		
+
 	}
 
 	private Department getFormData() {
 		Department obj = new Department();
 
+		ValidationException exception = new ValidationException("Validation error");
+
 		obj.setId(Utils.tryParseToInt(txId.getText()));
+		if (txName.getText() == null || txName.getText().trim().equals("")) {
+			exception.addError("name", "Fiel can't be empty");
+		}
 		obj.setName(txName.getText());
+
+		if (exception.getErros().size() > 0) {
+			throw exception;
+		}
 
 		return obj;
 	}
@@ -110,6 +126,14 @@ public class DepartmentFormController implements Initializable {
 		}
 		txId.setText(String.valueOf(entity.getId()));
 		txName.setText(entity.getName());
+	}
+
+	private void setErrorMessages(Map<String, String> errors) {
+		Set<String> fields = errors.keySet();
+
+		if (fields.contains("name")) {
+			labelErrorName.setText(errors.get("name"));
+		}
 	}
 
 }
