@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox prefHeight="250.0" prefWidth="321.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1">
+<VBox prefHeight="250.0" prefWidth="321.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label text="About">
          <font>
@@ -16,7 +15,17 @@
             <Insets bottom="10.0" left="20.0" top="10.0" />
          </padding>
       </Label>
-      <Label text="JavaFX apllication demo">
+      <Label alignment="CENTER" contentDisplay="CENTER" text="Uma aplicação desktop desenvolvida com Java 17, " textAlignment="CENTER">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" text="JavaFX, JDBC e MySQL." textAlignment="CENTER">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <Label text="Projetada para facilitar o gerenciamento de vendedores e departamentos de uma empresa.">
          <padding>
             <Insets left="20.0" />
          </padding>
