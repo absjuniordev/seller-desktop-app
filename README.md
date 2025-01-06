@@ -77,6 +77,6 @@ Este projeto está licenciado sob a *MIT License*. Consulte o arquivo LICENSE pa
 ## 🎉 Contribuições  
 Contribuições são bem-vindas! Se você deseja colaborar, sinta-se à vontade para abrir uma issue ou enviar um pull request.  
 
----
 
-*Nota:* Caso enfrente algum problema, entre em contato ou abra uma issue para suporte.
+
+
