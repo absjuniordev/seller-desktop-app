@@ -1,6 +1,6 @@
 # Seller  
 
-Uma aplicação desktop desenvolvida com *Java 17, **JavaFX* e *MySQL*, projetada para facilitar o gerenciamento de vendedores e departamentos de uma empresa.  
+Uma aplicação desktop desenvolvida com *Java 17*, *JavaFX*, *JDBC* e *MySQL*, projetada para facilitar o gerenciamento de vendedores e departamentos de uma empresa.  
 
 ---
 
@@ -9,6 +9,8 @@ O *Seller* é uma aplicação que permite:
 - Cadastrar vendedores com informações detalhadas, como salários e outros dados.  
 - Criar departamentos e associar vendedores a eles.  
 - Gerenciar tudo isso em uma interface gráfica intuitiva, construída com o *SceneBuilder*.  
+
+A comunicação com o banco de dados é feita utilizando *JDBC*, garantindo alta performance e flexibilidade.  
 
 Além disso, o projeto inclui um instalador, facilitando o deployment da aplicação.  
 
@@ -27,6 +29,7 @@ Além disso, o projeto inclui um instalador, facilitando o deployment da aplica�
 - *Java 17*  
 - *JavaFX* para interfaces gráficas.  
 - *SceneBuilder* para o design das telas.  
+- *JDBC* para conexão com o banco de dados.  
 - *MySQL* para gerenciamento de dados.  
 
 ---
@@ -66,7 +69,6 @@ Para executar esta aplicação, você precisará:
 
 ---
 
-
 ## 📝 Licença  
 Este projeto está licenciado sob a *MIT License*. Consulte o arquivo LICENSE para obter mais informações.  
 
@@ -74,3 +76,7 @@ Este projeto está licenciado sob a *MIT License*. Consulte o arquivo LICENSE pa
 
 ## 🎉 Contribuições  
 Contribuições são bem-vindas! Se você deseja colaborar, sinta-se à vontade para abrir uma issue ou enviar um pull request.  
+
+---
+
+*Nota:* Caso enfrente algum problema, entre em contato ou abra uma issue para suporte.
