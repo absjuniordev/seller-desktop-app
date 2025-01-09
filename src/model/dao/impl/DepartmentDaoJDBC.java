@@ -22,6 +22,28 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 		this.conn = conn;
 	}
 	
+	
+	@Override
+	public void createTable() {
+	    Statement st = null;
+	    try {
+	        st = conn.createStatement();
+	        String sql = """
+	            CREATE TABLE IF NOT EXISTS department (
+	                Id INT(11) NOT NULL AUTO_INCREMENT,
+	                Name VARCHAR(60) DEFAULT NULL,
+	                PRIMARY KEY (Id)
+	            );
+	        """;
+	        st.execute(sql);
+	        System.out.println("Tabela 'department' criada ou já existe.");
+	    } catch (SQLException e) {
+	        throw new DbException("Erro ao criar tabela: " + e.getMessage());
+	    } finally {
+	        DB.closeStatement(st);
+	    }
+	}
+	
 	@Override
 	public Department findById(Integer id) {
 		PreparedStatement st = null;
@@ -150,4 +172,9 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 			DB.closeStatement(st);
 		}
 	}
+
+
+
+
+	
 }

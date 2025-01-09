@@ -25,6 +25,33 @@ public class SellerDaoJDBC implements SellerDao {
 	}
 	
 	@Override
+	public void createTable() {
+	    Statement st = null;
+	    try {
+	        st = conn.createStatement();
+	        String sql = """
+	            CREATE TABLE IF NOT EXISTS seller (
+	                Id int(11) NOT NULL AUTO_INCREMENT,
+	        		Name varchar(60) NOT NULL,
+	        		Email varchar(100) NOT NULL,
+	        		BirthDate datetime NOT NULL,
+	        		BaseSalary double NOT NULL,
+	        		DepartmentId int(11) NOT NULL,
+	        		PRIMARY KEY (Id),
+	        		FOREIGN KEY (DepartmentId) REFERENCES department (id)
+	            );
+	        """;
+	        st.execute(sql);
+	        System.out.println("Tabela 'department' criada ou já existe.");
+	    } catch (SQLException e) {
+	        throw new DbException("Erro ao criar tabela: " + e.getMessage());
+	    } finally {
+	        DB.closeStatement(st);
+	    }
+	}
+
+	
+	@Override
 	public void insert(Seller obj) {
 		PreparedStatement st = null;
 		try {
