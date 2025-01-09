@@ -41,6 +41,8 @@ Além disso, o projeto inclui um instalador, facilitando o deployment da aplica�
 - *SceneBuilder* para o design das telas.  
 - *JDBC* para conexão com o banco de dados.  
 - *MySQL* para gerenciamento de dados.  
+- *Launch4j* para criação do executável.  
+- *Inno Setup* para criação do instalador.  
 
 ---
 
@@ -59,7 +61,7 @@ Para executar esta aplicação, você precisará:
 2. *Configure o MySQL*:  
    - Crie um banco de dados chamado coursejdbc.  
    - Certifique-se de que o usuário developer com a senha 123456 tenha permissão para acessar esse banco.  
-3. *Baixe o instalador do projeto*: [Baixar Instalador](https://github.com/absjuniordev/seller-desktop-app/raw/main/deploy/mysetup.exe) 
+3. *Baixe o instalador do projeto*: [Baixar Instalador](https://github.com/absjuniordev/seller-desktop-app/raw/main/deploy/mysetup.exe)  
 4. *Instale o aplicativo*: Siga as etapas do instalador fornecido.  
 5. Execute o aplicativo e comece a gerenciar seus vendedores e departamentos!  
 
@@ -85,8 +87,5 @@ Este projeto está licenciado sob a *MIT License*. Consulte o arquivo LICENSE pa
 ---
 
 ## 🎉 Contribuições  
-Contribuições são bem-vindas! Se você deseja colaborar, sinta-se à vontade para abrir uma issue ou enviar um pull request.  
-
-
-
+Contribuições são bem-vindas! Se você deseja colaborar, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
