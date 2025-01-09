@@ -49,7 +49,8 @@ Além disso, o projeto inclui um instalador, facilitando o deployment da aplica�
 ## 📦 Pré-requisitos  
 Para executar esta aplicação, você precisará:  
 1. Ter o *Java 17* (ou superior) instalado.  
-2. Um banco de dados *MySQL* configurado com:  
+2. Um banco de dados *MySQL* configurado com:
+   - Hostname: localhost
    - Usuário: developer  
    - Senha: 123456  
    - Banco de dados: coursejdbc  
