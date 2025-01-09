@@ -51,9 +51,12 @@ Para executar esta aplicação, você precisará:
 1. Ter o *Java 17* (ou superior) instalado.  
 2. Um banco de dados *MySQL* configurado com:
    - Hostname: localhost
-   - Usuário: developer  
+   - Usuário: client  
    - Senha: 123456  
-   - Banco de dados: coursejdbc  
+
+  <img src="image/MySQL.png" alt="Imagem 1" width="300">
+  
+
 
 ---
 
