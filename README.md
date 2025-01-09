@@ -25,6 +25,16 @@ Além disso, o projeto inclui um instalador, facilitando o deployment da aplica�
 
 ---
 
+## 🖼️ Imagens
+
+<p align="center">
+  <img src="image/Seller1.png" alt="Imagem 1" width="320">
+  <img src="image/Seller3.png" alt="Imagem 3" width="320">
+  <img src="image/Seller4.png" alt="Imagem 4" width="320">
+</p>
+
+---
+
 ## 🛠 Tecnologias Utilizadas  
 - *Java 17*  
 - *JavaFX* para interfaces gráficas.  
