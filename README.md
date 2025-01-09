@@ -28,9 +28,9 @@ Além disso, o projeto inclui um instalador, facilitando o deployment da aplica�
 ## 🖼️ Imagens
 
 <p align="center">
-  <img src="image/Seller1.png" alt="Imagem 1" width="320">
-  <img src="image/Seller3.png" alt="Imagem 3" width="320">
-  <img src="image/Seller4.png" alt="Imagem 4" width="320">
+  <img src="image/Seller1.png" alt="Imagem 1" width="300">
+  <img src="image/Seller3.png" alt="Imagem 3" width="300">
+  <img src="image/Seller4.png" alt="Imagem 4" width="300">
 </p>
 
 ---
@@ -59,7 +59,7 @@ Para executar esta aplicação, você precisará:
 2. *Configure o MySQL*:  
    - Crie um banco de dados chamado coursejdbc.  
    - Certifique-se de que o usuário developer com a senha 123456 tenha permissão para acessar esse banco.  
-3. *Baixe o instalador do projeto*: [Baixar Instalador](https://github.com/absjuniordev/seller-desktop-app/raw/main/deploy/installSeller.exe) 
+3. *Baixe o instalador do projeto*: [Baixar Instalador](https://github.com/absjuniordev/seller-desktop-app/raw/main/deploy/mysetup.exe) 
 4. *Instale o aplicativo*: Siga as etapas do instalador fornecido.  
 5. Execute o aplicativo e comece a gerenciar seus vendedores e departamentos!  
 
