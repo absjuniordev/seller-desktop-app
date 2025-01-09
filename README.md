@@ -25,19 +25,32 @@ Além disso, o projeto inclui um instalador, facilitando o deployment da aplica�
 
 ---
 
+## 🖼️ Imagens
+
+<p align="center">
+  <img src="image/Seller1.png" alt="Imagem 1" width="300">
+  <img src="image/Seller3.png" alt="Imagem 3" width="300">
+  <img src="image/Seller4.png" alt="Imagem 4" width="300">
+</p>
+
+---
+
 ## 🛠 Tecnologias Utilizadas  
 - *Java 17*  
 - *JavaFX* para interfaces gráficas.  
 - *SceneBuilder* para o design das telas.  
 - *JDBC* para conexão com o banco de dados.  
 - *MySQL* para gerenciamento de dados.  
+- *Launch4j* para criação do executável.  
+- *Inno Setup* para criação do instalador.  
 
 ---
 
 ## 📦 Pré-requisitos  
 Para executar esta aplicação, você precisará:  
 1. Ter o *Java 17* (ou superior) instalado.  
-2. Um banco de dados *MySQL* configurado com:  
+2. Um banco de dados *MySQL* configurado com:
+   - Hostname: localhost
    - Usuário: developer  
    - Senha: 123456  
    - Banco de dados: coursejdbc  
@@ -49,7 +62,7 @@ Para executar esta aplicação, você precisará:
 2. *Configure o MySQL*:  
    - Crie um banco de dados chamado coursejdbc.  
    - Certifique-se de que o usuário developer com a senha 123456 tenha permissão para acessar esse banco.  
-3. *Baixe o instalador do projeto*: [Baixar Instalador](https://github.com/absjuniordev/seller-desktop-app/raw/main/deploy/installSeller.exe) 
+3. *Baixe o instalador do projeto*: [Baixar Instalador](https://github.com/absjuniordev/seller-desktop-app/raw/main/deploy/mysetup.exe)  
 4. *Instale o aplicativo*: Siga as etapas do instalador fornecido.  
 5. Execute o aplicativo e comece a gerenciar seus vendedores e departamentos!  
 
@@ -75,8 +88,5 @@ Este projeto está licenciado sob a *MIT License*. Consulte o arquivo LICENSE pa
 ---
 
 ## 🎉 Contribuições  
-Contribuições são bem-vindas! Se você deseja colaborar, sinta-se à vontade para abrir uma issue ou enviar um pull request.  
-
-
-
+Contribuições são bem-vindas! Se você deseja colaborar, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
