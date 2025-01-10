@@ -63,11 +63,10 @@ Para executar esta aplicação, você precisará:
 ## 🔧 Como Rodar o Projeto  
 1. *Baixe e instale o Java*: Certifique-se de que o Java esteja configurado no PATH.  
 2. *Configure o MySQL*:  
-   - Crie um banco de dados chamado coursejdbc.  
-   - Certifique-se de que o usuário developer com a senha 123456 tenha permissão para acessar esse banco.  
+    - Certifique-se de que o usuário client com a senha 123456 tenha permissão para acessar esse banco.  
 3. *Baixe o instalador do projeto*: [Baixar Instalador](https://github.com/absjuniordev/seller-desktop-app/raw/main/deploy/mysetup.exe)  
 4. *Instale o aplicativo*: Siga as etapas do instalador fornecido.  
-5. Execute o aplicativo e comece a gerenciar seus vendedores e departamentos!  
+5. Execute o aplicativo e comece a gerenciar seus vendedores e departamentos!
 
 ---
 
